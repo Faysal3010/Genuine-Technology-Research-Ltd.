@@ -1,8 +1,12 @@
 # Task 1: Algorithmic Trading Adventure
 
 ## Installation
-
-## (1) Create virtual environment
+## (1) Clone the repository
+   ```bash
+   git clone <repository-url>
+   cd Algorithmic-Trading-Adventure
+   ```
+## (2) Create virtual environment
 
 ### Windows
 ```bash
@@ -14,7 +18,7 @@ python -m venv .venv
 python3 -m venv .venv
 source .venv/bin/activate
 ```
-## (2) Install dependencies
+## (3) Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
