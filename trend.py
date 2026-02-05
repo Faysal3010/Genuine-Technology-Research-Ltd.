@@ -72,5 +72,12 @@ class TradingStrategy:
             print(f"Net Profit: ${self.profit:.2f}")
         else:
             print(f"Net Loss: ${abs(self.profit):.2f}")
+    
+    def run(self):
+         """Run the trading strategy."""
+         self.get_data_clean_up()
+         self.add_indicators_50_200()
+         self.run_strategy()
+         self.evaluate()
 
 

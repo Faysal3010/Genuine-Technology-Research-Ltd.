@@ -83,8 +83,8 @@ MA50 < MA200	SELL
 profit = (sell_price - buy_price) × shares
 
 
-Positive → Profit
-Negative → Loss
+#### Positive → Profit
+#### Negative → Loss
 
 #### Example Output:
 ```
