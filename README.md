@@ -1,4 +1,4 @@
-# Genuine-Technology-Research-Ltd.
+# Task 1: Algorithmic Trading Adventure
 
 ## Installation
 
@@ -102,5 +102,6 @@ TradingStrategy("TSLA", "2020-01-01", "2024-01-01", 10000)
 
 
 Change budget:
+
 
 budget=10000
