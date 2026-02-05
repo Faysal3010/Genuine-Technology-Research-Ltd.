@@ -47,8 +47,6 @@ This project downloads stock data from Yahoo Finance, calculates moving averages
 
 
 ```yaml
-Task_1/
-│
 ├── trend.py # TradingStrategy class
 ├── main.py # run script
 ├── data.csv
@@ -59,49 +57,47 @@ Task_1/
 
 
 ▶️ How to Run
-Run the strategy
+Run into terminal
+```cmd
 python main.py
-
-🧠 How It Works
-Step 1 – Download data
+```
+#### How It Works
+#### Step 1 – Download data
 yf.download()
 
-Step 2 – Clean data
+#### Step 2 – Clean data
 
 Remove duplicates
 
 Forward fill NaN
 
-Step 3 – Indicators
+#### Step 3 – Indicators
 MA50  = 50-day moving average
 MA200 = 200-day moving average
 
-Step 4 – Strategy Logic
+#### Step 4 – Strategy Logic
 Condition	Action
 MA50 > MA200	BUY
 MA50 < MA200	SELL
-Step 5 – Profit Calculation
+#### Step 5 – Profit Calculation
 profit = (sell_price - buy_price) × shares
 
 
 Positive → Profit
 Negative → Loss
 
-🖥 Example Output
+#### Example Output:
+```
 BUY 32 shares at 150 on 2020-06-01
 SELL 32 shares at 170 on 2021-02-10
-
-====== Strategy Result ======
-Net Profit: $640.00
-
-🔧 Customization
+```
+Customization
 
 Change stock:
-
+```
 TradingStrategy("TSLA", "2020-01-01", "2024-01-01", 10000)
-
+```
 
 Change budget:
-
 
 budget=10000
